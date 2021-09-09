@@ -93,8 +93,8 @@ Actual time needed to complete: 60min
 
 Estimate of time needed to complete: 60min
 
-Start time: 9:15 PM
+Start time: 10:15 PM
 
-Finish time: d
+Finish time: 12:00 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 115min
