@@ -7,13 +7,13 @@ class Main extends Component {
         return (
             Data.map(item => {
             return(        
-            <>
+            
               <HornedBeasts title= {item.title} 
                             imageUrl={item.image_url} 
                             description={item.description}
                              />  
             
-            </>)}))
+            )}))
         
     }
 }

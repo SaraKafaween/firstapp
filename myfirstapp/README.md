@@ -83,19 +83,18 @@ Actual time needed to complete: 18min
 
 Estimate of time needed to complete: 45min
 
-Start time: 3:00 AM
+Start time: 8:00 PM
 
-Finish time: 
+Finish time: 9:00 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 60min
 
+### Feature 3 Bootstrap
 
-Number and name of feature: ________________________________
+Estimate of time needed to complete: 60min
 
-Estimate of time needed to complete: _____
+Start time: 9:15 PM
 
-Start time: _____
-
-Finish time: _____
+Finish time: d
 
 Actual time needed to complete: _____
