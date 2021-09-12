@@ -98,3 +98,5 @@ Start time: 10:15 PM
 Finish time: 12:00 PM
 
 Actual time needed to complete: 115min
+
+### Feature 4 Display a Modal 
