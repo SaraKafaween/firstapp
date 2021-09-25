@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeasts extends React.Component {
   constructor(props) {
@@ -6,26 +7,36 @@ class HornedBeasts extends React.Component {
     this.state = {
       favImg: 0,
     };
-  }
-  giveHeart = () => {
-    this.setState({
-      favImg: this.state.favImg + 1,
+  };
+  handleCard = () => {
+    this.props.displayModal({
+      title: this.props.title,
+      description: this.props.description,
+      image_url: this.props.image_url,
     });
   };
+  // giveHeart = () => {
+  //   this.setState({
+  //     favImg: this.state.favImg + 1,
+  //   });
+  // };
   render() {
     return (
-      <div>
-        <h2>{this.props.title}</h2>
-        <p>{this.props.description}</p>
-        <img
-          onClick={this.giveHeart}
+      <>
+      <Card style={{ width: '18rem' }} onClick={this.handleCard}>
+        <Card.Img
+          variant='top'
           src={this.props.image_url}
-          alt=""
-          title={this.props.title}
+          onClick={this.giveHeart}
+          alt=''
         />
-        <br />
-        <p>💟 {this.state.favImg}</p>
-      </div>
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text> {`💝` + this.state.favImg}</Card.Text>
+          <Card.Text>{this.props.description}</Card.Text>
+        </Card.Body>
+      </Card>
+    </>
     );
   }
 }
