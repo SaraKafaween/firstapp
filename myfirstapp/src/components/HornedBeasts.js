@@ -8,6 +8,7 @@ class HornedBeasts extends React.Component {
       favImg: 0,
     };
   };
+  
   handleCard = () => {
     this.props.displayModal({
       title: this.props.title,
@@ -15,11 +16,12 @@ class HornedBeasts extends React.Component {
       image_url: this.props.image_url,
     });
   };
-  // giveHeart = () => {
-  //   this.setState({
-  //     favImg: this.state.favImg + 1,
-  //   });
-  // };
+
+  giveHeart = () => {
+    this.setState({
+      favImg: this.state.favImg + 1,
+    });
+  };
   render() {
     return (
       <>
