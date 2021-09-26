@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-class Footer extends Component {
-    render() {
-        return (
-            <>
-              <p>All Rights Reserved @ 2021 by Sara Kafaween</p>  
-            </>
-        )
-    }
+class Footer extends React.Component {
+  render() {
+    return <h1>&copy; Sara Kafaween</h1>;
+  }
 }
 
-export default Footer
+export default Footer;

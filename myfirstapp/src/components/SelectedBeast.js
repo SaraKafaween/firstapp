@@ -1,7 +1,7 @@
-import React from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import React from "react";
+import Modal from "react-bootstrap/Modal";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 class SelectedBeast extends React.Component {
   render() {
@@ -12,18 +12,18 @@ class SelectedBeast extends React.Component {
             <Modal.Title>{this.props.selectedBeast.title}</Modal.Title>
           </Modal.Header>
           <Card.Img
-            variant='top'
+            variant="top"
             src={this.props.selectedBeast.image_url}
-            alt='img'
+            alt="img"
             title={this.props.selectedBeast.title}
           />
 
           <Modal.Body>{this.props.selectedBeast.description}</Modal.Body>
           <Modal.Footer>
-            <Button variant='secondary' onClick={this.props.close}>
+            <Button variant="secondary" onClick={this.props.close}>
               Close
             </Button>
-            <Button variant='primary' onClick={this.props.close}>
+            <Button variant="primary" onClick={this.props.close}>
               Save Changes
             </Button>
           </Modal.Footer>
