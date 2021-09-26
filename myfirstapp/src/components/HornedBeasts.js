@@ -1,5 +1,5 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
+import React from "react";
+import Card from "react-bootstrap/Card";
 
 class HornedBeasts extends React.Component {
   constructor(props) {
@@ -7,8 +7,8 @@ class HornedBeasts extends React.Component {
     this.state = {
       favImg: 0,
     };
-  };
-  
+  }
+
   handleCard = () => {
     this.props.displayModal({
       title: this.props.title,
@@ -25,20 +25,20 @@ class HornedBeasts extends React.Component {
   render() {
     return (
       <>
-      <Card style={{ width: '18rem' }} onClick={this.handleCard}>
-        <Card.Img
-          variant='top'
-          src={this.props.image_url}
-          onClick={this.giveHeart}
-          alt=''
-        />
-        <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text> {`💝` + this.state.favImg}</Card.Text>
-          <Card.Text>{this.props.description}</Card.Text>
-        </Card.Body>
-      </Card>
-    </>
+        <Card style={{ width: "18rem" }} onClick={this.handleCard}>
+          <Card.Img
+            variant="top"
+            src={this.props.image_url}
+            onClick={this.giveHeart}
+            alt=""
+          />
+          <Card.Body>
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text> {`💝` + this.state.favImg}</Card.Text>
+            <Card.Text>{this.props.description}</Card.Text>
+          </Card.Body>
+        </Card>
+      </>
     );
   }
 }
